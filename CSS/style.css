@@ -21,7 +21,7 @@ body {
     padding: 3em;
     background-color: rgb(30, 30, 30);
     text-align: center;
-    box-shadow: 10px 10px rgba(36, 36, 36, 0.2);
+    box-shadow: 10px 10px 3px rgba(36, 36, 36, 0.2);
     gap: 10px;
 }
 
@@ -29,23 +29,26 @@ body {
     font-size: 50px;
 }
 
-#btn-min , #btn-seg {
+#btn-min , #btn-p {
+    width: 120px;
     text-align: center;
     border: 0;
     border-radius: 10px;
     padding: 1rem;
     box-shadow: 0 0 10px 3px rgba( 255, 255, 255, 0.10);
     transition: scale 0.2s ease;
-    transition: background-color 60ms ease;
+    transition: background-color 1s ease;
+    transition: box-shadow 1s ease;
 }
 
-#btn-min:hover , #btn-seg:hover {
+#btn-min:hover , #btn-p:hover {
     scale: 1.1;
     cursor: pointer;
     background-color: bisque;
+    box-shadow: 0 0 10px 1px rgba( 255, 255, 255, 0.40);
 }
 
-#btn-min:active , #btn-seg:active {
+#btn-min:active , #btn-p:active {
     background-color: rgb(241, 247, 69);
 }
 
