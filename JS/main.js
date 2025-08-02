@@ -4,6 +4,8 @@ const btnMin = document.getElementById("btn-min");
 const btnP = document.getElementById("btn-p");
 
 
+
+
 //Variables
 let pausa = true
 let interID = null;
