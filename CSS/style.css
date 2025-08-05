@@ -31,7 +31,7 @@ body {
     font-size: 50px;
 }
 
-#btn-min , #btn-p {
+#btn-min , #btn-i {
     width: 120px;
     text-align: center;
     border: 0;
@@ -43,14 +43,14 @@ body {
     transition: box-shadow 1s ease;
 }
 
-#btn-min:hover , #btn-p:hover {
+#btn-min:hover , #btn-i:hover {
     scale: 1.1;
     cursor: pointer;
     background-color: bisque;
     box-shadow: 0 0 10px 1px rgba( 255, 255, 255, 0.40);
 }
 
-#btn-min:active , #btn-p:active {
+#btn-min:active , #btn-i:active {
     background-color: rgb(241, 247, 69);
 }
 
