@@ -1,6 +1,8 @@
 //Referencias
 const temp = document.getElementById("temp");
 const btnMin = document.getElementById("btn-min");
+const btnMinOne = document.getElementById("btn-min-one");
+const btnSeg = document.getElementById("btn-seg");
 const btnI = document.getElementById("btn-i");
 const botones = document.querySelector(".botones");
 
@@ -22,11 +24,37 @@ let textSeg = "";
 let textMin = "";
 let textHour = "";
 
+//Añade 5 minutos
 btnMin.addEventListener("click", () => {
+    if (pausa){
+    limites();
+    min += 5;
+    limites();
+    update();
+    }
+});
+
+//añade 1 minuto
+btnMinOne.addEventListener("click", () => {
+    if (pausa){
     limites();
     min++;
+    limites();
     update();
+    }
 });
+
+//Añade 30 segundos
+btnSeg.addEventListener("click", () => {
+    if (pausa){
+    limites();
+    seg += 30;
+    limites();
+    update();
+    }
+});
+
+
 
 //Iniciar y Pausar
 btnI.addEventListener("click", () => {
@@ -112,18 +140,16 @@ function control(){
 if (seg > 0 || min > 0 || hour > 0){
     interIDCheck = setInterval(() => {
 
-    limites();
-    //Si finaliza la cuenta
-    if (hour === 0 && min === 0 && seg === 0) {
-        stopTimer();
-        stopCheck();
-    }
+        limites();
 
-    update();
-    }, 100);
+        //Si finaliza la cuenta
+        if (hour === 0 && min === 0 && seg === 0) {
+            stopTimer();
+            stopCheck();
+        }
 
-    }else{
-    update();
+        update();
+        }, 100);
     }
 }
 
