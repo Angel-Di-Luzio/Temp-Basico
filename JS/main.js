@@ -161,7 +161,6 @@ function limites(){
 function startTimer(){
     //Empieza la cuenta regresiva
     pausa = false;
-    btnI.innerText = "Pausar";
     if (!interID)
     interID = setInterval(() => {
         seg--;
@@ -171,7 +170,6 @@ function startTimer(){
 function stopTimer(){
     //Termina la cuenta regresiva
     pausa = true
-    btnI.innerText = "Iniciar";
     if (interID){
         clearInterval(interID);
         interID = null;
@@ -180,7 +178,6 @@ function stopTimer(){
 
 function stopCheck(){
     pausa = true;
-    btnI.innerText = "Iniciar";
     if (interIDCheck){
         clearInterval(interIDCheck);
         interIDCheck = null;
