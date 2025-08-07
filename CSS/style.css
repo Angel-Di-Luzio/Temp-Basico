@@ -69,7 +69,25 @@ body {
     box-shadow: 0 0 8px 1px rgba( 255, 255, 255, 0.40);
 }
 
-#btn-i:active, #btn-min:active, #btn-min-one:active, #btn-seg:active {
+.btn-R , .btn-P{
+    width: 155px;
+    padding: 1rem;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 3px rgba( 255, 255, 255, 0.10);
+    transition: box-shadow 1s ease;
+    text-align: center;
+}
+
+.btn-R:hover , .btn-P:hover {
+    transition: scale 0.2s ease;
+    scale: 1.03;
+    cursor: pointer;
+    background-color: bisque;
+    box-shadow: 0 0 8px 1px rgba( 255, 255, 255, 0.40);
+}
+
+#btn-i:active, #btn-min:active, #btn-min-one:active, #btn-seg:active, .btn-R:active, .btn-P:active{
     background-color: rgb(241, 247, 69);
 }
 
